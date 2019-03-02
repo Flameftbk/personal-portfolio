@@ -1,0 +1,60 @@
+@import "/variables.scss";
+@import "~ngx-smart-modal/ngx-smart-modal";
+
+.bg { 
+  background-image: url(./assets/background.jpg);
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  background-color: #999;
+}
+
+.navpad {
+  padding-top: 3rem;
+}
+
+.footer {
+  background-color: $dark;
+}
+
+.box {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.1)!important;
+}
+
+.scroll-down {
+  position: fixed;
+  right: 0.75rem;
+  bottom: 0.75rem;
+}
+.scroll-up {
+  position: fixed;
+  right: 0.75rem;
+  bottom: 3.75rem;
+}
+
+.nsm-dialog {
+  width: 60rem;
+  top: 0; left: 0; bottom: 0; right: 0;
+  margin: auto;
+  position: absolute;
+  min-height: 200px;
+  max-width: 2000px;
+}
+
+.linkedin {
+  background-color: #0077b5;
+  color: $white;
+}
+
+.mt-2 {
+  margin-top: 0.75rem;
+}
+
+a {
+  color: $white;
+}
+
+a:hover {
+  color: $primary;
+}
