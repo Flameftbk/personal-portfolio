@@ -34,7 +34,7 @@
 }
 
 .nsm-dialog {
-  width: 60rem;
+  width: 100%;
   top: 0; left: 0; bottom: 0; right: 0;
   margin: auto;
   position: absolute;
@@ -63,7 +63,7 @@ a:hover {
   opacity: 0;
   animation-name: slideinright;
   animation-duration: 2s;
-  animation-delay: 3.2s;
+  animation-delay: 3.4s;
   animation-fill-mode:forwards;
 }
 
@@ -71,15 +71,23 @@ a:hover {
   opacity: 0;
   animation-name: slideinright;
   animation-duration: 2s;
-  animation-delay: 3.2s;
+  animation-delay: 3.4s;
   animation-fill-mode:forwards;
 }
 
-.tags {
+.slide-in-2 {
   margin-left: -750px;
   animation-name: slidein;
-  animation-duration: 1s;
-  animation-delay: 5.4s;
+  animation-duration: 1.5s;
+  animation-delay: 5.6s;
+  animation-fill-mode:forwards;
+}
+
+.slide-in-3 {
+  margin-left: -750px;
+  animation-name: slidein;
+  animation-duration: 1.5s;
+  animation-delay: 9s;
   animation-fill-mode:forwards;
 }
 

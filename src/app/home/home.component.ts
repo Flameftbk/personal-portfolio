@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     setTimeout(() => {
       this.loading = false;
-    }, 800);
+    }, 1000);
     setTimeout(() => {
       anime({
         targets: '.animate',
@@ -28,29 +28,35 @@ export class HomeComponent implements OnInit, AfterViewInit {
         rotate: '3turn',
         duration: 4500
       });
-    }, 3200);
+    }, 3400);
     const typed = new Typed('#typed', {
       stringsElement: '#typed-strings',
       typeSpeed: 30,
-      startDelay: 1300,
+      startDelay: 1500,
       showCursor: false
     });
     const typed2 = new Typed('#typed2', {
       stringsElement: '#typed-strings2',
       typeSpeed: 30,
-      startDelay: 2200,
+      startDelay: 2400,
       showCursor: false
     });
     const typed3 = new Typed('#typed3', {
       stringsElement: '#typed-strings3',
       typeSpeed: 30,
-      startDelay: 3100,
+      startDelay: 3300,
       showCursor: false
     });
     const typed4 = new Typed('#typed4', {
       stringsElement: '#typed-strings4',
       typeSpeed: 40,
-      startDelay: 5400,
+      startDelay: 5600,
+      showCursor: false
+    });
+    const typed5 = new Typed('#typed5', {
+      stringsElement: '#typed-strings5',
+      typeSpeed: 40,
+      startDelay: 9000,
       showCursor: false
     });
   }

@@ -8,6 +8,11 @@
       <span>Hosted on <a href="https://firebase.google.com" target="_blank">Firebase</a>. Source Code on <a href="https://github.com/Flameftbk/personal-portfolio" target="_blank">Github</a>.</span>
       <br>
       <span><a (click)="openImpressum()">Impressum</a> | <a (click)="openDatenschutz()">Datenschutz</a></span>
+      <a class="button is-light is-rounded animate scroll-up" (click)="scrollUp()">
+        <span class="icon">
+          <i class="fas fa-arrow-up"></i>
+        </span>
+      </a>
     </p>
   </div>
   <ngx-smart-modal #impressumModal identifier="impressumModal" [closable]="true" [dismissable]="true" [escapable]="true">

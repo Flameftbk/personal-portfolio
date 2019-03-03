@@ -17,7 +17,7 @@ export class FooterComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     setTimeout(() => {
       this.loading = false;
-    }, 1000);
+    }, 1100);
   }
 
   openImpressum() {
@@ -28,5 +28,10 @@ export class FooterComponent implements OnInit, AfterViewInit {
     this.ngxSmartModalService.getModal('datenschutzModal').open();
   }
 
-
+  scrollUp() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+      });
+    }
 }
