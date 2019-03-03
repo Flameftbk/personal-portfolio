@@ -1,4 +1,4 @@
-<section class="hero is-fullheight bg">
+<section class="hero is-fullheight bg {{loading}}">
   <div class="hero-head">
     </div>
     <div class="hero-body">
@@ -68,3 +68,4 @@
     </a>
   </div>
 </section>
+<div *ngIf="loading" class="lds-ring ring-default centered"><div></div><div></div><div></div><div></div></div>
