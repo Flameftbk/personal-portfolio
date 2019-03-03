@@ -58,3 +58,37 @@ a {
 a:hover {
   color: $primary;
 }
+
+.buttons {
+  opacity: 0;
+  animation-name: slideinright;
+  animation-duration: 2s;
+  animation-delay: 2.8s;
+  animation-fill-mode:forwards;
+}
+
+.slide-in {
+  opacity: 0;
+  animation-name: slideinright;
+  animation-duration: 2s;
+  animation-delay: 2.8s;
+  animation-fill-mode:forwards;
+}
+
+.tags {
+  margin-left: -750px;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-delay: 4.5s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes slidein {
+  0% {margin-left: -750px;}
+  100% {margin-left: 0px;}
+}
+
+@keyframes slideinright {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
