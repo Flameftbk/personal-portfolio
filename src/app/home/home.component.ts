@@ -32,25 +32,25 @@ export class HomeComponent implements OnInit, AfterViewInit {
     const typed = new Typed('#typed', {
       stringsElement: '#typed-strings',
       typeSpeed: 30,
-      startDelay: 900,
+      startDelay: 1300,
       showCursor: false
     });
     const typed2 = new Typed('#typed2', {
       stringsElement: '#typed-strings2',
       typeSpeed: 30,
-      startDelay: 1800,
+      startDelay: 2200,
       showCursor: false
     });
     const typed3 = new Typed('#typed3', {
       stringsElement: '#typed-strings3',
       typeSpeed: 30,
-      startDelay: 2700,
+      startDelay: 3100,
       showCursor: false
     });
     const typed4 = new Typed('#typed4', {
       stringsElement: '#typed-strings4',
       typeSpeed: 40,
-      startDelay: 5000,
+      startDelay: 5400,
       showCursor: false
     });
   }
