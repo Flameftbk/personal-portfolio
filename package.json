@@ -23,6 +23,7 @@
     "animejs": "^3.0.1",
     "bulma": "^0.7.4",
     "core-js": "^2.5.4",
+    "default-passive-events": "^1.0.10",
     "firebase": "^5.8.5",
     "ng-in-viewport": "^6.0.3",
     "ngx-smart-modal": "^7.1.1",

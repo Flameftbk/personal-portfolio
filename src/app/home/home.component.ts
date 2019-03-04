@@ -10,7 +10,7 @@ import { NgxSmartModalService } from 'ngx-smart-modal';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit, AfterViewInit {
-  public loading = true;
+  public loading = false;
   constructor(private ngxSmartModalService: NgxSmartModalService) { }
 
   ngOnInit() {
@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     setTimeout(() => {
       this.loading = false;
-    }, 1000);
+    }, 200);
     setTimeout(() => {
       anime({
         targets: '.animate',
@@ -49,14 +49,14 @@ export class HomeComponent implements OnInit, AfterViewInit {
     });
     const typed4 = new Typed('#typed4', {
       stringsElement: '#typed-strings4',
-      typeSpeed: 40,
-      startDelay: 5600,
+      typeSpeed: 35,
+      startDelay: 4800,
       showCursor: false
     });
     const typed5 = new Typed('#typed5', {
       stringsElement: '#typed-strings5',
-      typeSpeed: 40,
-      startDelay: 9000,
+      typeSpeed: 35,
+      startDelay: 6800,
       showCursor: false
     });
   }

@@ -17,7 +17,7 @@ export class FooterComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     setTimeout(() => {
       this.loading = false;
-    }, 1100);
+    }, 250);
   }
 
   openImpressum() {

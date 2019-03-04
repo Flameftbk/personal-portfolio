@@ -1,8 +1,12 @@
 @import "/variables.scss";
 @import "~ngx-smart-modal/ngx-smart-modal";
 
+html{
+  scroll-behavior: smooth;
+}
+
 .bg { 
-  background-image: url(./assets/background.jpg);
+  background-image: url(./assets/background-compressor.jpg);
   background-position: center center;
   background-repeat:  no-repeat;
   background-attachment: fixed;
@@ -79,7 +83,7 @@ a:hover {
   margin-left: -750px;
   animation-name: slidein;
   animation-duration: 1.5s;
-  animation-delay: 5.6s;
+  animation-delay: 5.2s;
   animation-fill-mode:forwards;
 }
 
@@ -87,7 +91,7 @@ a:hover {
   margin-left: -750px;
   animation-name: slidein;
   animation-duration: 1.5s;
-  animation-delay: 9s;
+  animation-delay: 7s;
   animation-fill-mode:forwards;
 }
 
