@@ -67,15 +67,37 @@ a:hover {
   opacity: 0;
   animation-name: slideinright;
   animation-duration: 2s;
-  animation-delay: 3.4s;
+  animation-delay: 3.6s;
   animation-fill-mode:forwards;
+}
+
+.button {
+  box-shadow: 0 10px 20px rgba(0,0,0,.1);
+  transition: all .2s ease-in-out;
+}
+
+.button:hover {
+  box-shadow: 0 20px 40px rgba(0,0,0,.15);
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.tag {
+  box-shadow: 0 10px 20px rgba(0,0,0,.1);
+  transition: all .2s ease-in-out;
+}
+
+.tag:hover {
+  box-shadow: 0 20px 40px rgba(0,0,0,.15);
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 .slide-in {
   opacity: 0;
   animation-name: slideinright;
   animation-duration: 2s;
-  animation-delay: 3.4s;
+  animation-delay: 3.8s;
   animation-fill-mode:forwards;
 }
 
