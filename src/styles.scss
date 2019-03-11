@@ -1,4 +1,8 @@
 @import "/variables.scss";
+@import "../node_modules/aos/src/sass/aos.scss";
+
+$transition-duration: 700ms;
+$transition-timing-function: ease-in-out;
 @import "~ngx-smart-modal/ngx-smart-modal";
 
 html{
@@ -63,13 +67,21 @@ a:hover {
   color: $primary;
 }
 
-.buttons {
-  opacity: 0;
-  animation-name: slideinright;
-  animation-duration: 2s;
-  animation-delay: 4s;
-  animation-fill-mode:forwards;
+body[data-aos-delay='4000'] [data-aos],
+[data-aos][data-aos][data-aos-delay='4000'] {
+  transition-delay: 4000ms;
 }
+
+body[data-aos-delay='6500'] [data-aos],
+[data-aos][data-aos][data-aos-delay='6500'] {
+  transition-delay: 6500ms;
+}
+
+body[data-aos-delay='8600'] [data-aos],
+[data-aos][data-aos][data-aos-delay='8600'] {
+  transition-delay: 8600ms;
+}
+
 
 .button {
   box-shadow: 0 10px 20px rgba(0,0,0,.1);
@@ -197,4 +209,16 @@ a:hover {
 
 .true {
   display: none;
+}
+
+.is-imogent {
+  background-color: #2cb3a0!important;
+}
+
+.is-ingokneisel {
+  background-color: rgb(136, 8, 7)!important;
+}
+
+.other-link:hover {
+  color: white!important;
 }

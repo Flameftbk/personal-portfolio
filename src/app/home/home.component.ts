@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
         rotate: '3turn',
         duration: 4500
       });
-    }, 3400);
+    }, 0);
     const typed = new Typed('#typed', {
       stringsElement: '#typed-strings',
       typeSpeed: 30,
@@ -50,13 +50,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
     const typed4 = new Typed('#typed4', {
       stringsElement: '#typed-strings4',
       typeSpeed: 35,
-      startDelay: 4800,
+      startDelay: 5400,
       showCursor: false
     });
     const typed5 = new Typed('#typed5', {
       stringsElement: '#typed-strings5',
       typeSpeed: 35,
-      startDelay: 6800,
+      startDelay: 7800,
       showCursor: false
     });
   }
