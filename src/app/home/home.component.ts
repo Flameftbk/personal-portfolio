@@ -47,18 +47,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
       startDelay: 3300,
       showCursor: false
     });
-    const typed4 = new Typed('#typed4', {
-      stringsElement: '#typed-strings4',
-      typeSpeed: 35,
-      startDelay: 5400,
-      showCursor: false
-    });
-    const typed5 = new Typed('#typed5', {
-      stringsElement: '#typed-strings5',
-      typeSpeed: 35,
-      startDelay: 7800,
-      showCursor: false
-    });
   }
   scrollDown() {
     const height = document.documentElement.clientHeight;

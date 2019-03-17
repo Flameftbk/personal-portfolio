@@ -7,6 +7,8 @@ $transition-timing-function: ease-in-out;
 
 html{
   scroll-behavior: smooth;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
 }
 
 .bg { 
@@ -16,6 +18,37 @@ html{
   background-attachment: fixed;
   background-size:  cover;
   background-color: #999;
+}
+
+.nsm-dialog {
+  position: fixed!important;
+  top: calc(50vh - (85vh / 2))!important;
+  left: calc(50vw - (85vw / 2))!important;
+  width: 85vw!important;
+  max-height: 80vh!important;
+  max-width: 85vw!important;
+  overflow: scroll!important;
+  margin: 0!important;
+}
+
+.nsm-content {
+  width: 100%!important;
+  max-height: 80vh!important;
+  height: auto!important;
+  overflow: scroll!important;
+  padding: 1.5em!important;
+  margin: 0 auto!important;
+}
+
+.nsm-content::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+}
+
+.nsm-content::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: $primary;
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
 .navpad {
@@ -72,14 +105,24 @@ body[data-aos-delay='4000'] [data-aos],
   transition-delay: 4000ms;
 }
 
-body[data-aos-delay='6500'] [data-aos],
-[data-aos][data-aos][data-aos-delay='6500'] {
-  transition-delay: 6500ms;
+body[data-aos-delay='5400'] [data-aos],
+[data-aos][data-aos][data-aos-delay='5400'] {
+  transition-delay: 5400ms;
 }
 
-body[data-aos-delay='8600'] [data-aos],
-[data-aos][data-aos][data-aos-delay='8600'] {
-  transition-delay: 8600ms;
+body[data-aos-delay='6200'] [data-aos],
+[data-aos][data-aos][data-aos-delay='6200'] {
+  transition-delay: 6200ms;
+}
+
+body[data-aos-delay='7000'] [data-aos],
+[data-aos][data-aos][data-aos-delay='7000'] {
+  transition-delay: 7000ms;
+}
+
+body[data-aos-delay='7800'] [data-aos],
+[data-aos][data-aos][data-aos-delay='7800'] {
+  transition-delay: 7800ms;
 }
 
 

@@ -38,3 +38,12 @@ a:hover {
 	right: 0.75rem;
 	bottom: -3.5rem;
 }
+
+.link {
+  color: $primary;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-decoration-color: $primary;
+}
