@@ -27,7 +27,7 @@ html{
   width: 85vw!important;
   max-height: 80vh!important;
   max-width: 85vw!important;
-  overflow: scroll!important;
+  overflow: hidden!important;
   margin: 0!important;
 }
 
@@ -40,16 +40,26 @@ html{
   margin: 0 auto!important;
 }
 
-.nsm-content::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 5px;
+.media-content {
+  word-break: break-word;
 }
 
-.nsm-content::-webkit-scrollbar-thumb {
+::-webkit-scrollbar {
+  width:8px;
+}
+
+:-webkit-scrollbar-track:no-button {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background-color: $primary;
   -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
+
+/* set button(top and bottom of the scrollbar) */
+::-webkit-scrollbar-button {display:none}
 
 .navpad {
   padding-top: 3rem;
