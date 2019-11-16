@@ -9,12 +9,14 @@ import { FooterComponent } from './footer/footer.component';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { HomeComponent } from './home/home.component';
+import { SpanishComponent } from './spanish/spanish.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    SpanishComponent
   ],
   imports: [
     BrowserModule,

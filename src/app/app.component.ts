@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
+import { Router, Event, NavigationStart, NavigationEnd, NavigationError } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,10 @@ import * as AOS from 'aos';
 export class AppComponent implements OnInit {
   title = 'personal-portfolio';
 
-  constructor() {}
+  constructor(
+    public router: Router
+  ) {
+  }
 
   ngOnInit() {
     AOS.init({
