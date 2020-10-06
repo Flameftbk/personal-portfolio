@@ -264,10 +264,21 @@ body[data-aos-delay='7800'] [data-aos],
   display: none;
 }
 
+.is-angular:hover {
+  color: #de0031;
+}
+
+.is-vue:hover {
+  color: #40b983;
+}
+
 .is-imogent {
   background-color: #2cb3a0!important;
 }
 
+.is-leonex {
+  background-color: rgb(190,28,35)!important;
+}
 .is-ingokneisel {
   background-color: rgb(136, 8, 7)!important;
 }
