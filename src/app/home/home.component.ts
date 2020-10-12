@@ -1,7 +1,10 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
 import anime from '../../../node_modules/animejs';
 import Typed from 'typed.js';
+import { tap, take } from 'rxjs/operators';
 import { NgxSmartModalService } from 'ngx-smart-modal';
+import { analytics } from 'firebase';
 
 
 @Component({
@@ -11,12 +14,21 @@ import { NgxSmartModalService } from 'ngx-smart-modal';
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   public loading = false;
-  constructor(private ngxSmartModalService: NgxSmartModalService) { }
+  public data:any = null;
+  public last_update = null;
+  constructor(private ngxSmartModalService: NgxSmartModalService, private afs: AngularFirestore) { }
 
   ngOnInit() {
+    this.afs.collection('coffee').doc('bjoern_coffee').valueChanges().subscribe(data => {
+      this.data = data;
+      this.last_update = Date.now();
+    });
+    console.log(this.data);
   }
 
   ngAfterViewInit() {
+    
+    console.log(this.data);
     setTimeout(() => {
       this.loading = false;
     }, 200);

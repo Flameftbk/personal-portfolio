@@ -7,9 +7,11 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { HomeComponent } from './home/home.component';
 import { SpanishComponent } from './spanish/spanish.component';
+import { FirestoreSettingsToken } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,15 @@ import { SpanishComponent } from './spanish/spanish.component';
     BrowserModule,
     AppRoutingModule,
     NgxSmartModalModule.forRoot(),
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule, // imports firebase/firestore, only needed for database features
   ],
-  providers: [],
+  providers: [
+    {
+      provide: FirestoreSettingsToken,
+      useValue: {}
+  },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
