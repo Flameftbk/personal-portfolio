@@ -1,5 +1,6 @@
 {
   "projects": {
-    "personal-portfolio": "personal-portfolio-6e0a0"
+    "personal-portfolio": "personal-portfolio-6e0a0",
+    "default": "personal-portfolio-6e0a0"
   }
 }
