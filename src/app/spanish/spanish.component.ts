@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./spanish.component.scss']
 })
 export class SpanishComponent implements OnInit {
-
+  public loading = false;
   constructor() { }
 
   ngOnInit() {

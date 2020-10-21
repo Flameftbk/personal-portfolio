@@ -21,7 +21,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.afs.collection('coffee').doc('bjoern_coffee').valueChanges().subscribe(data => {
       this.data = data;
-      this.last_update = Date.now();
     });
     console.log(this.data);
   }
