@@ -7,12 +7,11 @@ const app = express();
 app.use(cors({ origin: true }));
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
-const { firestore } = require('firebase-admin');
 admin.initializeApp();
 exports.coffee = functions.https.onRequest((req, res) => {
     admin.firestore().collection('coffee').doc('bjoern_coffee').update({
         coffee_consumed: admin.firestore.FieldValue.increment(1),
-        lastCoffeeeUpdate: new firestore.Timestamp.now()
+        lastCoffeeUpdate: admin.firestore.Timestamp.now()
     })
     res.status(200).end();
 });
