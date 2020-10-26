@@ -135,6 +135,16 @@ body[data-aos-delay='7800'] [data-aos],
   transition-delay: 7800ms;
 }
 
+body[data-aos-delay='8600'] [data-aos],
+[data-aos][data-aos][data-aos-delay='8600'] {
+  transition-delay: 8600ms;
+}
+
+body[data-aos-delay='9400'] [data-aos],
+[data-aos][data-aos][data-aos-delay='9400'] {
+  transition-delay: 9400ms;
+}
+
 
 .button {
   box-shadow: 0 10px 20px rgba(0,0,0,.1);
@@ -272,6 +282,10 @@ body[data-aos-delay='7800'] [data-aos],
   color: #40b983;
 }
 
+.is-orange:hover {
+  color: #F5BA43!important;
+}
+
 .is-imogent {
   background-color: #2cb3a0!important;
 }
@@ -285,4 +299,8 @@ body[data-aos-delay='7800'] [data-aos],
 
 .other-link:hover {
   color: white!important;
+}
+
+.small-text {
+  font-size: 0.5rem;
 }

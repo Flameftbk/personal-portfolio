@@ -48,11 +48,19 @@
           </a>
         </p>
         <div data-aos="fade-right" data-aos-once="true" data-aos-delay="5400" data-aos-duration="1500">
-          <p class="subtitle is-6" *ngIf="data != null">Already drank  <span class="tag is-black">{{data.coffee_consumed}}</span>  cups of coffee! <span class="small-text">(Realtime, last coffee: {{data.lastCoffeeUpdate.toDate() | date: 'dd.MM., HH:mm' }})</span></p>
+          <p class="subtitle is-6" style="margin-bottom: 0.75rem">Coffee counter ☕️           <span class="small-text" *ngIf="data != null">  (Live, last coffee: {{data.lastCoffeeUpdate.toDate() | date: 'dd.MM., HH:mm' }})</span></p>
+        </div>
+        <section class="mt-2" data-aos="fade-right" data-aos-once="true" data-aos-delay="6200" data-aos-duration="1500">
+          <div class="tags are-medium" style="margin-bottom: -0.15rem">
+            <p class="subtitle is-6" *ngIf="data != null"><span id="coffee" class="tag is-black is-orange"><span style="font-size: 1.3rem">☕️</span>  {{data.coffee_consumed}} cups</span></p>
+          </div>
+        </section>
+        <br>
+        <div data-aos="fade-right" data-aos-once="true" data-aos-delay="7000" data-aos-duration="1500">
           <p class="subtitle is-6">Favourite tools ❤️</p>
         </div>
         <span id="typed4"></span>
-          <section class="mt-2" data-aos="fade-right" data-aos-once="true" data-aos-delay="6200" data-aos-duration="1500">
+          <section class="mt-2" data-aos="fade-right" data-aos-once="true" data-aos-delay="7800" data-aos-duration="1500">
             <div class="tags are-medium">
               <span class="tag is-dark"><a class="is-firebase" href="https://firebase.google.com" target="_blank" rel="noopener">Firebase</a></span>
               <span class="tag is-dark"><a class="is-vue" href="https://vuejs.org/" target="_blank" rel="noopener">Vue.js</a></span>
@@ -60,11 +68,11 @@
             </div>
           </section>
         <br>
-        <div data-aos="fade-right" data-aos-once="true" data-aos-delay="7000" data-aos-duration="1500">
+        <div data-aos="fade-right" data-aos-once="true" data-aos-delay="8600" data-aos-duration="1500">
           <p class="subtitle is-6">Recent work 🛠</p>
         </div>
         <span id="typed5"></span>
-          <section class="mt-2" data-aos="fade-right" data-aos-once="true" data-aos-delay="7800" data-aos-duration="1500">
+          <section class="mt-2" data-aos="fade-right" data-aos-once="true" data-aos-delay="9400" data-aos-duration="1500">
             <div class="tags are-medium">
               <span class="tag is-leonex"><a class="other-link" href="https://leonex.de" target="_blank" rel="noopener">LEONEX</a></span>
               <span class="tag is-imogent"><a class="other-link" href="https://app.imogent.com" target="_blank" rel="noopener">IMOGENT Platform</a></span>

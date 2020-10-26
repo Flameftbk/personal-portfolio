@@ -22,11 +22,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.afs.collection('coffee').doc('bjoern_coffee').valueChanges().subscribe(data => {
       this.data = data;
     });
-    console.log(this.data);
   }
 
   ngAfterViewInit() {
-    
     console.log(this.data);
     setTimeout(() => {
       this.loading = false;
